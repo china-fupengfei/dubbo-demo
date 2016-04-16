@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+          http://www.springframework.org/schema/beans/spring-beans.xsd  
+          http://code.alibabatech.com/schema/dubbo
+          http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+              
+	<dubbo:application name="curiousby-dubbo-consumer"/>
+	 
+	<dubbo:registry id="zk1" address="114.116.167.167:2181" protocol="zookeeper" />  
+	
+    <dubbo:consumer registry="zk1"/> 
+     
+    <dubbo:reference id="userService"  interface="com.baoy.service.UserService"/>  
+			
+</beans>
