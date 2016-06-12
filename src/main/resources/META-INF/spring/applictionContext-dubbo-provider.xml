@@ -22,6 +22,6 @@
      
      
     <!-- 声明需要暴露的服务接口 -->  
-    <dubbo:service interface="com.baoy.service.UserService"   ref="userServiceImpl" />  
+    <dubbo:service interface="com.baoy.service.UserService" ref="userServiceImpl" />  
 			
 </beans>

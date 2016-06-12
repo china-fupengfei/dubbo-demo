@@ -17,6 +17,7 @@ public class Start {
 				new String[] { "classpath*:META-INF/spring/applictionContext.xml",
 						"classpath*:META-INF/spring/applictionContext-dubbo-provider.xml" });
 		context.start();
+		System.out.println("================= dubbo started=================");
 		System.in.read(); // 按任意键退出
 	}
 

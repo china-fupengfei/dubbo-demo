@@ -7,12 +7,9 @@
           http://code.alibabatech.com/schema/dubbo
           http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
               
-	<dubbo:application name="curiousby-dubbo-consumer"/>
-	 
-	<dubbo:registry id="zk1" address="114.116.167.167:2181" protocol="zookeeper" />  
-	
-    <dubbo:consumer registry="zk1"/> 
-     
+	<dubbo:application name="dubbo-demo"/>
+	<dubbo:registry id="zk-dubbo-demo-1" address="127.0.0.1:2181" protocol="zookeeper" />  
+    <dubbo:consumer registry="zk-dubbo-demo-1"/> 
     <dubbo:reference id="userService"  interface="com.baoy.service.UserService"/>  
 			
 </beans>
