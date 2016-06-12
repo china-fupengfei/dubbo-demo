@@ -1,4 +1,4 @@
-启动
+运行步骤
  zookeeper：zoo.cfg-->clientPort=2181
    修改jdbc.properties配置
    服务提供端：com.baoy.main.Start
