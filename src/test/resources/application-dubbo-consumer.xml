@@ -10,6 +10,6 @@
     <!-- <dubbo:registry id="zk-dubbo-demo-1" address="127.0.0.1:2181" protocol="zookeeper" check="false" subscribe="true" register="false" /> -->
     <dubbo:registry id="zk-dubbo-demo-1" address="127.0.0.1:2181" protocol="zookeeper" />
     <dubbo:consumer registry="zk-dubbo-demo-1" />
-    <dubbo:reference id="userService" interface="com.baoy.service.UserService" />
+    <dubbo:reference id="dubboDemoService" interface="com.baoy.service.IDubboDemoService" />
 
 </beans>

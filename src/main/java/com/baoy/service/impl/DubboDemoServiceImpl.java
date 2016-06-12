@@ -7,16 +7,10 @@ import org.springframework.stereotype.Service;
 
 import com.baoy.bean.User;
 import com.baoy.dao.UserDao;
-import com.baoy.service.UserService;
+import com.baoy.service.IDubboDemoService;
 
-/**
- * @author baoyou E-mail:curiousby@163.com
- * @version 2016年2月22日 上午10:24:54
- *
- * desc: ...
- */
-@Service("userService")
-public class UserServiceImpl implements UserService {
+@Service("dubboDemoService")
+public class DubboDemoServiceImpl implements IDubboDemoService {
 
 	@Autowired
 	UserDao userDao;

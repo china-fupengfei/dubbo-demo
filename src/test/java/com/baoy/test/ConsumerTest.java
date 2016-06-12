@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.baoy.service.UserService;
+import com.baoy.service.IDubboDemoService;
 
 /**
  * @author baoyou E-mail:curiousby@163.com
@@ -18,7 +18,7 @@ import com.baoy.service.UserService;
 @ContextConfiguration(locations = { "classpath:application-dubbo-consumer.xml" })
 public class ConsumerTest {
 
-    @Resource UserService userService;
+    @Resource IDubboDemoService userService;
 
     @Test
     public void allUsersTest() {

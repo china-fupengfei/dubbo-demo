@@ -54,13 +54,11 @@ public class UserDaoImpl extends JdbcTempBaseDao implements UserDao {
     @Override
     public void updateUser(User user) {
         // TODO Auto-generated method stub
-
     }
 
     @Override
     public void addUser(User user) {
         // TODO Auto-generated method stub
-
     }
 
 }
