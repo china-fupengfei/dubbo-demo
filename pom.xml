@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.curiousby</groupId>
-	<artifactId>DubboDemo</artifactId>
+	<artifactId>dubbo-demo</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>DubboDemo Maven Webapp</name>
+	<name>dubbo-demo Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -170,7 +170,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>DubboDemo</finalName>
+		<finalName>dubbo-demo</finalName>
 
 		<plugins>
 			<plugin>
