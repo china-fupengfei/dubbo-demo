@@ -20,7 +20,9 @@ public class Start {
         String[] springCfgs = { "classpath*:META-INF/spring/applictionContext.xml", "classpath*:META-INF/spring/applictionContext-dubbo-provider.xml" };
         ClassPathXmlApplicationContext cxt = new ClassPathXmlApplicationContext(springCfgs);
         cxt.start();
-        System.out.println("================= dubbo started=================");
+        System.out.println("=================== dubbo started ===================");
+        System.out.println("**** You can input \"quit\" or \"exit\" to terminate ****");
+        System.out.println("=================== dubbo started ===================");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         while (true) {
             String accept = reader.readLine();
