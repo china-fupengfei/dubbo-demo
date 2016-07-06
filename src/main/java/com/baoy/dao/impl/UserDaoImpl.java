@@ -39,26 +39,4 @@ public class UserDaoImpl extends JdbcTempBaseDao implements UserDao {
         return this.getJdbcTemplate().query(sql, new UserRowMapper());
     }
 
-    @Override
-    public void delUserById(int userId) {
-        // TODO Auto-generated method stub
-
-    }
-
-    @Override
-    public User getUserById(int userId) {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    @Override
-    public void updateUser(User user) {
-        // TODO Auto-generated method stub
-    }
-
-    @Override
-    public void addUser(User user) {
-        // TODO Auto-generated method stub
-    }
-
 }

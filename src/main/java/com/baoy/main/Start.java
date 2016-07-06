@@ -3,9 +3,8 @@ package com.baoy.main;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.List;
 
+import org.apache.commons.lang3.ArrayUtils;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -14,8 +13,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class Start {
 
-    private static final List<String> EXISTS = Arrays.asList("quit", "exit");
-    
     public static void main(String[] args) throws IOException {
         String[] springCfgs = { "classpath*:META-INF/spring/applictionContext.xml", "classpath*:META-INF/spring/applictionContext-dubbo-provider.xml" };
         ClassPathXmlApplicationContext cxt = new ClassPathXmlApplicationContext(springCfgs);
@@ -26,7 +23,7 @@ public class Start {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         while (true) {
             String accept = reader.readLine();
-            if (EXISTS.contains(accept.toLowerCase())) {
+            if (ArrayUtils.contains(new String[] { "quit", "exit" }, accept.toLowerCase())) {
                 System.exit(0);
                 cxt.close();
             }

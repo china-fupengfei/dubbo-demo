@@ -19,20 +19,4 @@ public class DubboDemoServiceImpl implements IDubboDemoService {
 		return userDao.getAllUsers();
 	}
 
-	public void delUserById(int userId) {
-		userDao.delUserById(userId);
-	}
-
-	public User getUserById(int userId) {
-		return 	userDao.getUserById(userId);
-	}
-
-	public void updateUser(User user) {
-		userDao.updateUser(user);
-	}
-
-	public void addUser(User user) {
-		userDao.addUser(user);
-	}
-
 }
